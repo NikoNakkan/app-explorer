@@ -1,0 +1,15 @@
+{
+  "browser": {
+    "browserName": "chromium",
+    "isolated": true,
+    "contextOptions": {
+      "locale": "el-GR",
+      "timezoneId": "Europe/Athens",
+      "viewport": { "width": 1440, "height": 900 }
+    }
+  },
+  "capabilities": ["testing", "storage", "network", "devtools"],
+  "outputDir": "exploration/artifacts",
+  "testIdAttribute": "data-testid",
+  "timeouts": { "action": 8000, "navigation": 60000, "settle": 1000 }
+}

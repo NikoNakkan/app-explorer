@@ -1,0 +1,20 @@
+{
+  "name": "app-explorer",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "auth": "playwright test --project=setup",
+    "test": "playwright test",
+    "test:stable": "playwright test --repeat-each=3",
+    "report": "playwright show-report",
+    "ledger": "node tools/ledger.mjs",
+    "coverage": "node tools/ledger.mjs report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^22.0.0"
+  },
+  "engines": {
+    "node": ">=20.12"
+  }
+}

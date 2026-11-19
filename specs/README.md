@@ -1,0 +1,1 @@
+Test plans written by the Scenario Planner, one per **family** (cases with the same steps): `specs/<area>/<family>.md`. Format: `docs/spec-format.md`. How families and rows are chosen: `docs/test-generation.md`.

@@ -1,0 +1,19 @@
+{
+  "servers": {
+    "playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@0.0.86",
+        "--config",
+        "${workspaceFolder}/.vscode/playwright-mcp.json"
+      ]
+    },
+    "codemap": {
+      "type": "stdio",
+      "command": "REPLACE_WITH_THE_COMMAND_THAT_STARTS_YOUR_CODEMAP_MCP",
+      "args": ["REPLACE_WITH_ITS_ARGUMENTS"]
+    }
+  }
+}

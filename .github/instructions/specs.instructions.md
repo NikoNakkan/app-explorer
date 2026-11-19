@@ -1,0 +1,4 @@
+---
+applyTo: "specs/**/*.md"
+---
+Specs follow `docs/spec-format.md` exactly: one file per **family** (cases with the same steps), with a Steps table, a skeleton line, and a Rows table with one row per equivalence class and role class. Before writing a new spec, write its skeleton to `exploration/inbox/<family>.family.json` and run `node tools/ledger.mjs family check --file exploration/inbox/<family>.family.json`; if the family exists, add rows to its spec. A cross-role journey has a `switch-role:<role class>` step in its skeleton for every hand-off. Every row proves at least one target no other row proves; cases that don't go under "Not added". Every step's locator comes from an observation file's verified locator column. Every expected result has an `oracle:` citing a code-map ref or an observation file. Steps that have no verified locator go under "Open questions". Don't invent them.
